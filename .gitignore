@@ -1,0 +1,11 @@
+temp/
+train/
+v2/
+v3/
+v2_test/
+v3_test/
+v3_result/
+submission/
+predict/
+results/
+val/

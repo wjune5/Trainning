@@ -1,0 +1,5 @@
+train: /content/challenge12/train
+val: /content/challenge12/val
+
+nc: 3
+names: ['person','vessel', 'vehicle']
