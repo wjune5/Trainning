@@ -3,18 +3,12 @@ import shutil
 from pathlib import Path
 
 # Set paths
-root_dir = Path("G:\\downloads\\challenge1_challenge2 (1)\\challenge1_challenge2\\train")
-# output_images_dir = Path("G:\\GRADUATE\\lab\\Yolov11\\train\\images")
-# output_labels_dir = Path("G:\\GRADUATE\\lab\\Yolov11")
-output_base = Path("G:\\GRADUATE\\lab\\Yolov11\\v3")
-
-# Create output folders
-# output_images_dir.mkdir(parents=True, exist_ok=True)
-# output_labels_dir.mkdir(parents=True, exist_ok=True)
-# output_labels_dir.mkdir(parents=True, exist_ok=True)
+root_dir = Path("train")
+# output_images_dir = Path("train\\images")
+# output_labels_dir = Path("Yolov11")
+output_base = Path("Yolov11\\v3")
 
 # Scenarios and sensor types
-# scenarios = ["bg11"]
 scenarios = ["bg1", "bg3","bg4","bg5","bg7","bg9","bg10", "bg11","bg12","cy1","cy2"]
 sensors = ["GS_RGB", "GS_SWIR", "GS_Therm", "GS_UV","UAV_RGB","UAV_Therm"]
 
