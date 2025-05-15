@@ -5,12 +5,6 @@ from pathlib import Path
 from collections import defaultdict
 
 classes=['person','vessel', 'vehicle']
-# def get_classes(classes_path):
-#     with open(classes_path, encoding='utf-8') as f:
-#         class_names = f.readlines()
-#     class_names = [c.strip() for c in class_names]
-#     print("classes loaded:", class_names)
-#     return class_names, len(class_names)
 
 def get_file_list(dir, files, ext=None):
     """
@@ -90,7 +84,7 @@ def convert_txt_to_xml(image_dir, output_dir):
         image = Image.open(image_file)
         w,h = image.size
         # split file name to get scenario, sensor, and image real name(with suffix)
-        parts = str(image_file).split("_", 3)
+        parts = str(image_file.stem).split("_", 3)
         scenario = parts[0]
         sensor = "_".join(parts[1:3])
         _ = parts[3]
@@ -152,15 +146,14 @@ def convert_txt_to_xml(image_dir, output_dir):
         print(f"Saved: {output_path / 'predictions.xml'}")
 
 if __name__ == '__main__':
-    # img_dir = 'G:\\downloads\\challenge1_challenge2\\train\\test'
     # the directory to save images
-    img_dir = 'G:\\downloads\\challenge1_challenge2 (1)\\challenge1_challenge2\\train'
-    xml_dir = 'G:\\downloads\\challenge1_challenge2 (1)\\challenge1_challenge2\\train'
-    # xml_dir = 'G:\\downloads\\challenge1_challenge2\\train'
-# label_dir = 'G:\\downloads\\challenge1_challenge2\\train\\test' # new directory to save labels txt
+    img_dir = ''
+    xml_dir = ''
+    # xml_dir = ''
+    # label_dir = '' # new directory to save labels txt
 
     convert_xml_to_txt(xml_dir)
     # convert_txt_to_xml(
-    #     Path("G:\\GRADUATE\\lab\\Yolov11\\submission\\content\\runs\\detect\\predict"),
-    #     Path("G:\\GRADUATE\\lab\\Yolov11\\submission")
+    #     Path(""),
+    #     Path("")
     # )
