@@ -43,4 +43,4 @@ def split_val(base_dir, val_ratio=0.05):
         print(f"✅ Moved {moved_count} validation samples for sensor {sensor}, across {len(scenario_groups)} scenarios.")
 
 # Usage
-split_val("G:\\GRADUATE\\lab\\Yolov11\\v3")
+split_val(Yolov11\\v3")
