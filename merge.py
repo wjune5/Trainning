@@ -3,9 +3,9 @@ import shutil
 from pathlib import Path
 
 # Set paths
-root_dir = Path("G:\\downloads\\challenge1_challenge2\\train")
-output_images_dir = Path("G:\\GRADUATE\\lab\\Yolov11\\train\\images")
-output_labels_dir = Path("G:\\GRADUATE\\lab\\Yolov11\\train\\labels")
+root_dir = Path("train") # train folder
+output_images_dir = Path("\\train\\images")
+output_labels_dir = Path("\\train\\labels")
 
 # Create output folders
 output_images_dir.mkdir(parents=True, exist_ok=True)
