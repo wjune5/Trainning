@@ -1,5 +1,0 @@
-train: /content/yolov_11
-val:
-
-nc: 2
-classes: ['','']
